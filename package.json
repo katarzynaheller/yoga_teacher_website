@@ -1,0 +1,20 @@
+{
+  "name": "website_yoga_teacher",
+  "version": "1.0.0",
+  "description": "responsive website for a yoga teacher",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:static/css"
+  },
+  "author": "Katarzyna Antonik-Heller",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.64.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "bootstrap": "^5.3.1",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0"
+  }
+}

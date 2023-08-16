@@ -1,0 +1,82 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+
+// $font-family-sans-serif: "Quicksand", sans-serif;
+$nude: #d3ad9b;
+$cloud: #d1d4d8;
+
+$custom-theme-colors: map-merge($theme-colors, ("nude": $nude, "cloud": $cloud));
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+:root {
+    --bs-body-font-family: "Quicksand",
+        sans-serif;
+}
+
+
+// .navbar-nav .nav-item a.nav-link {
+//     color: white;
+// }
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    font-family: var(--bs-body-font-family)
+}
+
+
+.hero-bg {
+    position: relative;
+    background-image: url("../images/yoga_web_hero_image.jpg"
+        );
+    filter: grayscale(100%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100dvh;
+
+    @media(min-width:768px) and (max-width:1024px) {
+        min-height: 70dvh;
+    }
+
+    @media (min-width:1025px) {
+        min-height: 100dvh;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-bg .py-5 {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.homepage-nav .navbar-nav .nav-item a.nav-link {
+    color: #d1d4d8;
+}
+
+
+.base-nav .navbar-nav .nav-item a.nav-link {
+    color: black;
+}
