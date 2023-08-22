@@ -1,0 +1,76 @@
+{% include 'base.html' %}
+{% block content %}
+<!-- table with kinds of yoga classes -->
+<section class="yoga-classes">
+    <div class="container">
+        <div class="card-group">
+            <div class="card">
+                <img src="/static/images/h_bridge.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Joga poranna</h5>
+
+                    <p class="card-text">Poranna praktyka ma wiele korzyści. Pozwala zebrać siły na cały nadchodzący
+                        dzień.
+                    </p>
+                    <small class="text-muted">wtorek 8:15</small><br>
+                    <small class="text-muted">czwartek 9:00</small>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Wrocław, Sudecka 147B</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/images/h_hips.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Joga popołudniowa</h5>
+                    <p class="card-text">Praktyka przewidziana dla wszystkich, którzy po intensywnym dniu potrzebują
+                        wyciszenia.</p>
+                    <small class="text-muted">wtorek 18:00 i 19:15</small>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Wrocław, Sudecka 147B</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/images/h_warrior_hands.jpg" class="card-img-top" alt="..."
+                    >
+                <div class="card-body">
+                    <h5 class="card-title">Yoga in English</h5>
+                    <p class="card-text">If you look for a yoga teacher who will explain everything during the practise
+                        feel
+                        free to join my group or book individual meeting.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Wrocław/online</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Info about payment and booking -->
+<section class="yoga-classes-info">
+    <div class="container my-5 py-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 text-lg-left">
+                <h5 class="text-uppercase mb-4 pb-1">Zapisy</h5>
+                <p>info@jogagosiapardula.pl<br>
+                    +48 123-456-789</p>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <h5 class="text-uppercase mb-4 pb-1">Informacje</h5>
+                <p class="text-lg-left">* Na zajęcia obowiązują zapisy. <br>Koszt karnetu na 4 zajęcia:
+                    150zł,
+                    na 8
+                    zajęć 230zł. <br>Pojedyncze wejście 50zł.</p>
+            </div>
+</section>
+
+<div class="container pt-2 mt-2">
+    <footer>
+        <hr>
+        <p class="text-center text-muted" style="font-size: small;">website made by <a href="#" class="link-nude">django
+                designed</a></p>
+    </footer>
+</div>
+{% endblock content %}

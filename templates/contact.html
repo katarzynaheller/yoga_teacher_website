@@ -1,14 +1,16 @@
-{% include  'base.html' %}
-{% block content  %}
+{% include 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="text-center contact">
+        <p style="text-transform: uppercase;"> Napisz: info@jogagosiapardula.pl</p>
+    </div>
+    <div class="container pt-2 mt-2 fixed-bottom">
+        <footer>
+            <hr>
+            <p class="text-center text-muted" style="font-size: small;">website made by <a href="#"
+                    class="link-nude">django
+                    designed</a></p>
+        </footer>
+    </div>
 
-<div> napisz na gosia@joga.pl</div>
-
-<div class="container pt-2 mt-2 fixed-bottom">
-    <footer>
-        <hr>
-        <p class="text-center text-muted" style="font-size: small;">website made by <a href="#"
-                class="link-nude">django designed</a></p>
-    </footer>
-</div>
-
-{% endblock content %}
+    {% endblock content %}

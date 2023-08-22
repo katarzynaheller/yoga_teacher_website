@@ -1,0 +1,75 @@
+{% include 'base.html' %}
+{% block content %}
+
+{% now 'Y-m-d' as today %}
+
+<div class="container my-5">
+    <h1>Wyjazdy jogowe</h1>
+    <div class="row my-5">
+        {% for event in events %}
+        <div class="col-md-4 mb-4">
+            <div class="card {% if event.from_date|date:'d-m-Y' < today %} bg-dark-grey {% endif %}">
+                <div class="card-body">
+                    <p class="text-cloud">{% if event.from_date|date:'Y-m-d' > today %} WKRÓTCE {%else%} MINIONE {%endif%}</p>
+                    <h5 class="card-title my-3"> {{ event.title }}</h5>
+                    <p class="card-text"> {{ event.description }}</p>
+                    <p class="card-text" style="font-weight: bold;">Termin: {{ event.from_date|date:'d.m.Y'}} -
+                        {{event.to_date|date:'d.m.Y'}}</p>
+                    <p class="card-text" style="font-size: small"> Zapisy: info@jogagosiapardula.pl</p>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% comment %} <section class="yoga-classes">
+    <div class="container">
+        <div class="card-group">
+            <div class="card">
+
+                <img src="/static/images/yoga_asana_eagle.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Joga poranna</h5>
+                    <p class="card-text">Poranna praktyka ma wiele korzyści. Pozwala zebrać siły na cały nadchodzący
+                        dzień.
+                    </p>
+                    <small class="text-muted">wtorek 8:15</small><br>
+                    <small class="text-muted">czwartek 9:00</small>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Wrocław, Sudecka 147B</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/images/yoga_asana_stand.jpeg" class="card-img-top" alt="..."
+                    style="filter: grayscale(100%);">
+                <div class="card-body">
+                    <h5 class="card-title">Joga popołudniowa</h5>
+                    <p class="card-text">Praktyka przewidziana dla wszystkich, którzy po intensywnym dniu potrzebują
+                        wyciszenia.</p>
+                    <small class="text-muted">wtorek 18:00 i 19:15</small>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Wrocław, Sudecka 147B</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/images/yoga_asana_hand.jpeg" class="card-img-top" alt="..."
+                    style="filter: grayscale(100%);">
+                <div class="card-body">
+                    <h5 class="card-title">Yoga in English</h5>
+                    <p class="card-text">If you look for a yoga teacher who will explain everything during the
+                        practise
+                        feel
+                        free to join my group or book individual meeting.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Wrocław/online</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> {% endcomment %}
+
+{% endblock content%}

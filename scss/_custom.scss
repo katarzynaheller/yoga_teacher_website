@@ -2,7 +2,6 @@
 @import '../node_modules/bootstrap/scss/variables';
 
 
-// $font-family-sans-serif: "Quicksand", sans-serif;
 $nude: #d3ad9b;
 $cloud: #d1d4d8;
 
@@ -20,10 +19,6 @@ $theme-colors: map-merge($theme-colors, $custom-theme-colors);
         sans-serif;
 }
 
-
-// .navbar-nav .nav-item a.nav-link {
-//     color: white;
-// }
 
 h1,
 h2,
@@ -79,4 +74,52 @@ a {
 
 .base-nav .navbar-nav .nav-item a.nav-link {
     color: black;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+
+.contact {
+    display: flex;
+    min-height: 80dvh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact p {
+    text-align: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.bg-black {
+    background-color: black;
+
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.project-section .project-text {
+    padding: 3rem;
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+.bg-dark-grey {
+    background-color: #525252;
 }
