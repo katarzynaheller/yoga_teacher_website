@@ -1,4 +1,5 @@
 {% include 'base.html' %}
+{% load static %}
 {% block content %}
 <section class="about">
     <div class="container col-xxl-8 px-4 py-5">
@@ -9,7 +10,7 @@
                     nauczyciela jogi i joginkę. Teraz mogę bez wątpienia powiedzieć: kocham to co robię! </p>
             </div>
             <div class="col-10 col-sm-8 col-lg-6">
-                <img src="/static/images/v_pray_mirror.jpg" class="d-block mx-lg-auto img-fluid" alt="profile-pic"
+                <img src="{% static 'images/v_pray_mirror.jpg' %}" class="d-block mx-lg-auto img-fluid" alt="profile-pic"
                     width="700" height="500" loading="lazy">
             </div>
         </div>
@@ -21,7 +22,7 @@
     <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-                <img src="/static/images/v_teacher.jpg" class="d-block mx-lg-auto img-fluid" alt="profile-pic"
+                <img src="{% static 'images/v_teacher.jpg' %}" class="d-block mx-lg-auto img-fluid" alt="profile-pic"
                     width="700" height="500" loading="lazy" style="object-fit: cover;">
             </div>
             <div class="col-lg-6">
@@ -32,43 +33,8 @@
             </div>
         </div>
     </div>
-    <!-- <div class="container my-5">
-        <hr>
-    </div> -->
 </section>
 
-
-{% comment %} <section class="about-gallery">
-    <div class="container my-5">
-        <p>Dołącz na zajęcia we Wrocławiu lub wyjedź z nami na weekend!</p>
-        <a style="text-decoration: none;" class="link-dark" href="{% url 'classes' %}"> &rarr;</p>
-    </div>
-    <div class="container my-5 py-5">
-        <div class="row">
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img src="/static/images/yoga_child.jpeg" class="w-100 shadow-1-strong rounded mb-4"
-                    alt="yoga child pose" />
-
-                <img src="/static/images/yoga_candle.jpeg" class="w-100 shadow-1-strong rounded mb-4" alt="yoga pose" />
-            </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="/static/images/yoga_bends.jpeg" class="w-100 shadow-1-strong rounded mb-4" alt="bends yoga" />
-
-                <img src="/static/images/yoga_cricker.jpeg" class="w-100 shadow-1-strong rounded mb-4"
-                    alt="yoga class" />
-            </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="/static/images/yoga_camel.jpeg" class="w-100 shadow-1-strong rounded mb-4"
-                    alt="yoga practise" />
-
-                <img src="/static/images/yoga-selfie.jpeg" class="w-100 shadow-1-strong rounded mb-4"
-                    alt="yoga classes Wroclaw" />
-            </div>
-        </div>
-    </div>
-</section> {% endcomment %}
 
 <div class="container pt-2 mt-2">
     <footer>

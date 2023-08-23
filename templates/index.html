@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-lg mt-2 mb-2 homepage-nav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{% url 'index' %}">
-                    <img src="../static/images/logo_yoga_black.png" alt="logo"></a>
+                    <img src="{% static 'images/logo_yoga_black.png' %}" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -94,7 +94,7 @@
 
 
             <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="/static/images/h_warrior.jpg" alt="..." />
+                <div class="col-lg-6"><img class="img-fluid" src="{% static 'images/h_warrior.jpg' %}" alt="yoga-pose-warrior" />
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-dark-grey text-center h-100">
@@ -114,7 +114,7 @@
             </div>
 
             <div class="row gx-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="/static/images/h_yoga_pose.jpeg" alt="..." /></div>
+                <div class="col-lg-6"><img class="img-fluid" src="{% static 'images/h_yoga_pose.jpeg' %}" alt="..." /></div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="bg-dark-grey text-center h-100">
                         <div class="d-flex h-100">

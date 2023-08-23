@@ -1,11 +1,13 @@
 {% include 'base.html' %}
+
+{% load static %}
 {% block content %}
 <!-- table with kinds of yoga classes -->
 <section class="yoga-classes">
     <div class="container">
         <div class="card-group">
             <div class="card">
-                <img src="/static/images/h_bridge.jpg" class="card-img-top" alt="...">
+                <img src="{% static 'images/h_bridge.jpg' %}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Joga poranna</h5>
 
@@ -20,7 +22,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="/static/images/h_hips.jpg" class="card-img-top" alt="...">
+                <img src="{% static 'images/h_hips.jpg' %}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Joga popołudniowa</h5>
                     <p class="card-text">Praktyka przewidziana dla wszystkich, którzy po intensywnym dniu potrzebują
@@ -32,7 +34,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="/static/images/h_warrior_hands.jpg" class="card-img-top" alt="..."
+                <img src="{% static 'images/h_warrior_hands.jpg' %}" class="card-img-top" alt="..."
                     >
                 <div class="card-body">
                     <h5 class="card-title">Yoga in English</h5>

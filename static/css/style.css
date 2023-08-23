@@ -12043,6 +12043,10 @@ textarea.form-control-lg {
       sans-serif;
 }
 
+body {
+  background-color: #f1f1f1;
+}
+
 h1, .h1,
 h2,
 .h2,
