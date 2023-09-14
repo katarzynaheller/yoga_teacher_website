@@ -1,0 +1,39 @@
+{% include 'base.html' %}
+
+{% load static %}
+{% block content %}
+{% if classes %}
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+
+                <th scope="col">Data</th>
+                <th scope="col">Godzina</th>
+                <th scope="col">Ilość miejsc</th>
+                <th scope="col">Rezerwuj</th>
+        </thead>
+        <tr>
+            {% for c in classes %}
+
+            <td> {{ c.date|date:"d-m-Y"}}</td>
+            <td> {{ c.date|time:"H:i"}}</td>
+            <td>{{ c.slots }}</td>
+            <td> <a href="{% url 'book_class' c.id %}" class="link-nude">zapisz się</a></td>
+        </tr>
+        {% endfor %}
+        </tr>
+    </table>
+    {% else %}
+    <p>Aktualnie nie ma zaplanowanych zajęć, na które mozesz się zapisać.</p>
+    {% endif %}
+</div>
+<div class="container my-4 py-4">
+    <form class="form-inline" action="{% url 'list_bookings_by_email' %}" method="get">
+        <label for="email">Wpisz email, aby zobaczyć swoje rezerwacje:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Szukaj</button>
+    </form>
+</div>
+{% endblock content %}

@@ -20,6 +20,9 @@
                 <div class="card-footer">
                     <small class="text-muted">Wrocław, Sudecka 147B</small>
                 </div>
+                <div class="card-footer">
+                    <a class="btn btn-nude" href="{% url 'monthly_classes' %}">zarezerwuj</a>
+                </div>
             </div>
             <div class="card">
                 <img src="{% static 'images/h_hips.jpg' %}" class="card-img-top" alt="...">
@@ -32,10 +35,12 @@
                 <div class="card-footer">
                     <small class="text-muted">Wrocław, Sudecka 147B</small>
                 </div>
+                <div class="card-footer">
+                    <a class="btn btn-nude" href="{% url 'monthly_classes' %}">zarezerwuj</a>
+                </div>
             </div>
             <div class="card">
-                <img src="{% static 'images/h_warrior_hands.jpg' %}" class="card-img-top" alt="..."
-                    >
+                <img src="{% static 'images/h_warrior_hands.jpg' %}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Yoga in English</h5>
                     <p class="card-text">If you look for a yoga teacher who will explain everything during the practise
@@ -45,28 +50,31 @@
                 <div class="card-footer">
                     <small class="text-muted">Wrocław/online</small>
                 </div>
+                <div class="card-footer">
+                    <a class="btn btn-nude" href="{% url 'contact' %}">write to me</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Info about payment and booking -->
+{% comment %} <!-- Info about payment and booking -->
 <section class="yoga-classes-info">
     <div class="container my-5 py-5">
         <div class="row">
             <div class="col-lg-6 col-md-6 text-lg-left">
-                <h5 class="text-uppercase mb-4 pb-1">Zapisy</h5>
+                <h5 class="text-uppercase mb-4 pb-1">Kontakt</h5>
                 <p>info@jogagosiapardula.pl<br>
                     +48 123-456-789</p>
             </div>
             <div class="col-lg-6 col-md-6">
-                <h5 class="text-uppercase mb-4 pb-1">Informacje</h5>
-                <p class="text-lg-left">* Na zajęcia obowiązują zapisy. <br>Koszt karnetu na 4 zajęcia:
+                <h5 class="text-uppercase mb-4 pb-1">Cennik</h5>
+                <p class="text-lg-left">Koszt karnetu na 4 zajęcia:
                     150zł,
                     na 8
                     zajęć 230zł. <br>Pojedyncze wejście 50zł.</p>
             </div>
-</section>
+</section> {% endcomment %}
 
 <div class="container pt-2 mt-2">
     <footer>

@@ -1,0 +1,14 @@
+{% include 'base.html' %}
+
+{% load static %}
+{% block content %}
+<h2>{{ yoga_class.name }}</h2>
+<p> {{ yoga_class.date|date:"d-m-Y"}} | {{ yoga_class.date|time:"H:i"}}</p>
+<p style="font-size: small;">Podaj email, aby dokonać rezerwacji</p>
+<form method="post">
+  {% csrf_token %}
+  <label for="email">Email:</label>
+  <input type="email" name="email" required>
+  <input type="submit" value="Zapisz">
+</form>
+{% endblock content %}
